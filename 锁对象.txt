@@ -1,4 +1,4 @@
 原始锁是一个同步原始量，当它被锁住的时候不属于任何一个线程。
 它是目前Python里面能得到的最低层次的同步原始量，直接由thread扩展模块实现。
 
-一个原始锁之恩能够有两个状态，"locked"或"unlocked"。锁对象被创建的时候，默认是unlocked的状态。它有两个基本方法，acquire()和release()。当处于unlocked状态的时候，调用acquire()方法会把状态改为locked并且立即返回。当处于locked状态的时候，调用acquire()的方法则会阻塞一直到另一个线程中调用了release()方法将状态改变为unlocked，然后acquire()方法将其重置为locked并返回。只有在locked状态下才能调用release()方法，release()将会把状态改变为unlocked并立刻返回。如果试图对一个unlocked状态的锁调用release方法，将会产生ThreadError错误。
+一个原始锁只能够有两个状态，"locked"或"unlocked"。锁对象被创建的时候，默认是unlocked的状态。它有两个基本方法，acquire()和release()。当处于unlocked状态的时候，调用acquire()方法会把状态改为locked并且立即返回。当处于locked状态的时候，调用acquire()的方法则会阻塞一直到另一个线程中调用了release()方法将状态改变为unlocked，然后acquire()方法将其重置为locked并返回。只有在locked状态下才能调用release()方法，release()将会把状态改变为unlocked并立刻返回。如果试图对一个unlocked状态的锁调用release方法，将会产生ThreadError错误。
