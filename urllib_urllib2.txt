@@ -1,0 +1,13 @@
+You might intrigued by the existence of two seperate URL modules in Python
+-- urllib and urllib2
+Even more intrigung: they are not alternative for each other.
+So what is the difference between urllib and urllib2, 
+and do we need them both?
+
+urllib and urllib2 are both Python modules that do URL request related stuff
+but offer different functionalities. Their wto most significant differences
+are listed below
+
+''' urllib2 can accepts a Request object to set the headers for a URL request,
+while urllib can only accepts a URL. That means, you can not masquerade your
+User Agent string, etc in urllib.
