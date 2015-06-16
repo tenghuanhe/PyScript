@@ -52,7 +52,7 @@ if __name__ == '__main__':
     # login information
     post_params = {'_xsrf': xsrf,
                    'email': 'tenghuanhe@gmail.com',
-                   'password': '52hsf1314',
+                   'password': '********',
                    'rememberme': 'y'}
 
     headers = {'Accept': '*/*',
