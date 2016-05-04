@@ -1,0 +1,1 @@
+split -l 300 delta.txt delta
