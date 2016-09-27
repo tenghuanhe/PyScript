@@ -1,13 +1,13 @@
 # PyScript
 
 autologin.py
-- autologin in bitunion
+- Autologin out.bitunion.org
 
 fob.py
 - Python API for collecting data from Flock of Birds
 
 saspdf.py
-- downloading all pdf files in a web page
+- Downloading all pdf files in a web page
 
 mpmcq.py
 - A multi-producer, multi-consumer queue
